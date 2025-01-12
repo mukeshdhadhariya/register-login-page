@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md bg-zinc-800 p-8 rounded-lg shadow-lg text-white">
+        <h3 class="text-4xl font-semibold mb-6 text-center">Create Account</h3>
+        <form action="/register" method="post" class="space-y-4">
+            <div>
+                <input 
+                    class="w-full px-4 py-3 outline-none bg-zinc-700 rounded-lg focus:ring-2 focus:ring-blue-500 placeholder-gray-400" 
+                    type="text" 
+                    placeholder="Name" 
+                    name="name">
+            </div>
+            <div>
+                <input 
+                    class="w-full px-4 py-3 outline-none bg-zinc-700 rounded-lg focus:ring-2 focus:ring-blue-500 placeholder-gray-400" 
+                    type="text" 
+                    placeholder="Username" 
+                    name="username">
+            </div>
+            <div>
+                <input 
+                    class="w-full px-4 py-3 outline-none bg-zinc-700 rounded-lg focus:ring-2 focus:ring-blue-500 placeholder-gray-400" 
+                    type="password" 
+                    placeholder="Password" 
+                    name="passward">
+            </div>
+            <div>
+                <input 
+                    class="w-full px-4 py-3 outline-none bg-zinc-700 rounded-lg focus:ring-2 focus:ring-blue-500 placeholder-gray-400" 
+                    type="email" 
+                    placeholder="Email" 
+                    name="email">
+            </div>
+            <div>
+                <input 
+                    class="w-full px-4 py-3 outline-none bg-zinc-700 rounded-lg focus:ring-2 focus:ring-blue-500 placeholder-gray-400" 
+                    type="number" 
+                    placeholder="Age" 
+                    name="age">
+            </div>
+            <div>
+                <input 
+                    class="w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 cursor-pointer" 
+                    type="submit" 
+                    value="Create Account">
+            </div>
+        </form>
+        <div class="mt-6 text-center">
+            <p class="text-gray-400">Already have an account? 
+                <a href="/login" class="text-blue-500 hover:underline">Login</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
