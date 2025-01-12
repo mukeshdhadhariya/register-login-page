@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "build": "ejs views/index.ejs -o dist/index.html && cp -R public dist",
+  "deploy": "gh-pages -d dist"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,5 +19,9 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.3",
     "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "ejs-cli": "^2.2.3",
+    "gh-pages": "^6.3.0"
   }
 }
