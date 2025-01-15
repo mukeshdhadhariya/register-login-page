@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const bcrypt=require('bcrypt')
 const jwt=require('jsonwebtoken');
 const upload = require('./config/multer');
+const port=3000 
 
 
 app.set("view engine", "ejs");
@@ -125,4 +126,4 @@ function isloggedin(req,res,next){
         next();
     }
 }
-app.listen(3000);
+app.listen(port);
