@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 const bcrypt=require('bcrypt')
 const jwt=require('jsonwebtoken');
 const upload = require('./config/multer');
-const port=3000 
+const port = process.env.PORT || 4000;
 
 
 app.set("view engine", "ejs");
